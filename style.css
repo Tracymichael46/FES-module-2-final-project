@@ -216,6 +216,24 @@ nav {
     background-color: rgba( 60, 13, 153);
 }
 
+/* Menu */
+
+.menu--open .menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.menu__link {
+    color: #1a202c;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 8px 0;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+}
+
 /* MY ADDITIONS */
 
 .btn__menu {
@@ -1329,6 +1347,23 @@ MOBILE RESPONSIVENESS ↓
     }
     footer {
         padding: 80px 32px;
+    }
+
+    .nav__links {
+        display: none;
+    }
+
+    .section__para {
+        font-size: 16px;
+    }
+
+    .feature__row {
+        padding: 32px 8px;
+        margin: 0 16px;
+    }
+
+    .feature {
+        max-width: calc(50%);
     }
 }
 
