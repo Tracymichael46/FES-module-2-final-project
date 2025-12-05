@@ -1332,15 +1332,39 @@ MOBILE RESPONSIVENESS ↓
 
 @media(max-width: 1280px) {
     header .row {
-        align-items: flex-end;
+        align-items: flex-end;      
     }
+
+    .header__title {
+            font-size: 36px;
+            color: #1a202c;
+            line-height: 1.25;
+    }
+
+    .header__description--para {
+        font-size: 16px;
+    }
+
+    .testimonials__img {
+        width: 40%;
+    }
+
+    .testimonials__description {
+        width: calc(100% - 40%);
+    }
+
 }
 
 @media (max-width: 1024px) {
 
+    .header__title {
+        font-size: 30px;
+    }
+
     .btn__menu {
         display: block;
     }
+
     header .row {
         flex-direction: column;
         align-items: center;
@@ -1349,12 +1373,49 @@ MOBILE RESPONSIVENESS ↓
         padding: 80px 32px;
     }
 
+    .header__description--para {
+        margin: 20px 0;
+    }
+
+    .header__description {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__description, .header__img--wrapper {
+        width: 100%;
+        max-width: 512px;
+        margin: 0 auto;
+    }
+
     .nav__links {
         display: none;
     }
 
+    #features .section__title, #prcing .section__title {
+        font-size: 48px;
+    }
+
+    .header__customers--title, .header__img--wrapper {
+        margin-top: 48px;
+    }
+
+    .header__customers {
+        padding-right: 0px;
+    }
+
     .section__para {
         font-size: 16px;
+    }
+
+    .features {
+        max-width: 768px;
+    }
+
+    .feature {
+        width: calc(50%);
     }
 
     .feature__row {
@@ -1362,9 +1423,25 @@ MOBILE RESPONSIVENESS ↓
         margin: 0 16px;
     }
 
-    .feature {
-        max-width: calc(50%);
+    .section__title {
+        font-size: 36px;
     }
+
+    .plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+   #testimonials .section__title {
+        margin-bottom: 24px;
+        line-height: 1.25;
+   }
+
+
+   .start__row {
+    flex-direction: column;
+   }
+    
 }
 
 @media(max-width: 768px) {
@@ -1379,6 +1456,10 @@ MOBILE RESPONSIVENESS ↓
     }
     #pricing .row {
         margin-top: 40px;
+    }
+
+    .features {
+        justify-content: center;
     }
 }
 
